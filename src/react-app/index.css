@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer base {
+  :root {
+    /* Thaisa Advocacia Brand Colors */
+    --background: 40 8% 93%; /* #eeede9 - creme claro */
+    --foreground: 20 8% 11%; /* #1b1b1b - quase preto */
+    --card: 0 0% 100%;
+    --card-foreground: 20 8% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 8% 11%;
+    --primary: 349 45% 29%; /* #6b2737 - vinho */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 8% 93%;
+    --secondary-foreground: 20 8% 11%;
+    --muted: 40 6% 88%;
+    --muted-foreground: 20 6% 35%;
+    --accent: 39 52% 52%; /* #c19749 - dourado */
+    --accent-foreground: 20 8% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 40 6% 82%;
+    --input: 40 6% 82%;
+    --ring: 349 45% 29%;
+    --radius: 0.25rem;
+    --chart-1: 349 45% 35%;
+    --chart-2: 39 52% 52%;
+    --chart-3: 349 65% 20%;
+    --chart-4: 20 8% 25%;
+    --chart-5: 40 8% 70%;
+    --sidebar: 40 8% 93%;
+    --sidebar-foreground: 20 8% 11%;
+    --sidebar-primary: 349 45% 29%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 6% 88%;
+    --sidebar-accent-foreground: 20 8% 11%;
+    --sidebar-border: 40 6% 82%;
+    --sidebar-ring: 349 45% 29%;
+
+    /* Landing page specific */
+    --wine: 349 45% 29%; /* #6b2737 */
+    --wine-dark: 349 65% 11%; /* #280e18 */
+    --gold: 39 52% 52%; /* #c19749 */
+    --cream: 40 8% 93%; /* #eeede9 */
+    --almost-black: 20 8% 11%; /* #1b1b1b */
+    --pure-black: 20 30% 3%; /* #0e0b09 */
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 98%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 24 9.8% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 349 45% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+    --accent: 39 52% 52%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 100% / 10%;
+    --input: 0 0% 100% / 15%;
+    --ring: 24 5.4% 63.9%;
+    --chart-1: 349 45% 35%;
+    --chart-2: 39 52% 52%;
+    --chart-3: 349 65% 20%;
+    --chart-4: 20 8% 25%;
+    --chart-5: 40 8% 70%;
+    --sidebar: 24 9.8% 10%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 349 45% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 12 6.5% 15.1%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 100% / 10%;
+    --sidebar-ring: 24 5.4% 63.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  .font-display {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  button:not([disabled]),
+  [role="button"]:not([disabled]) {
+    cursor: pointer;
+  }
+}
+
+/* Animations */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slide-in-right 0.6s ease-out forwards;
+}
+
+.animate-slide-left {
+  animation: slide-in-left 0.6s ease-out forwards;
+}
+
+/* Animation delay utilities */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-800 { animation-delay: 0.8s; }
+
+.opacity-0 { opacity: 0; }
+
+/* Scroll reveal */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(10px);
+  transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease-out;
+}
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* Font Classes */
+.font-geist { font-family: 'Geist', 'Inter', sans-serif; }
+.font-instrument-serif { font-family: 'Instrument Serif', serif; }
