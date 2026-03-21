@@ -7,6 +7,6 @@
     </style>
   </defs>
   <text class="thaisa" x="10" y="150">thaisa</text>
-  <text class="adv" x="430" y="150">adv</text>
-  <circle cx="700" cy="150" r="9"/>
+  <text class="adv" x="370" y="150">adv</text>
+  <circle cx="640" cy="150" r="9"/>
 </svg>
