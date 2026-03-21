@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 200" fill="#2b2b2b">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@750&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@750&amp;display=swap');
     </style>
   </defs>
   <text y="150">
-    <tspan style="font-family:'Times New Roman',Times,serif;font-style:italic;font-size:110px;letter-spacing:-2px">thaisa</tspan><tspan style="font-family:'Montserrat',sans-serif;font-weight:750;font-size:110px;letter-spacing:-5px">adv.</tspan>
+    <tspan style="font-family:'Times New Roman',Times,serif;font-style:italic;font-size:110px;letter-spacing:-2px">thaisa</tspan><tspan style="font-family:'Be Vietnam Pro',sans-serif;font-weight:750;font-size:110px;letter-spacing:-5px">adv.</tspan>
   </text>
 </svg>
