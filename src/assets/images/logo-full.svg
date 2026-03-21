@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 200" fill="#2b2b2b">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&amp;family=Montserrat:wght@900&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&amp;family=Montserrat:wght@800&amp;display=swap');
     </style>
   </defs>
   <text y="150">
-    <tspan style="font-family:'Playfair Display',serif;font-style:italic;font-size:110px;letter-spacing:-2px">thaisa</tspan><tspan style="font-family:'Montserrat',sans-serif;font-weight:900;font-size:110px;letter-spacing:-5px">adv.</tspan>
+    <tspan style="font-family:'Playfair Display',serif;font-style:italic;font-size:110px;letter-spacing:-2px">thaisa</tspan><tspan style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:110px;letter-spacing:-5px">adv.</tspan>
   </text>
 </svg>
