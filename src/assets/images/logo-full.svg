@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" fill="#2b2b2b">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&amp;family=Montserrat:wght@900&amp;display=swap');
+      .thaisa { font-family: 'Playfair Display', serif; font-style: italic; font-size: 110px; letter-spacing: -2px; }
+      .adv { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 110px; letter-spacing: -5px; }
+    </style>
+  </defs>
+  <text class="thaisa" x="10" y="150">thaisa</text>
+  <text class="adv" x="430" y="150">adv</text>
+  <circle cx="700" cy="150" r="9"/>
+</svg>
