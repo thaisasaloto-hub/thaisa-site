@@ -6,7 +6,7 @@ import SharedDocument from "@/react-app/pages/SharedDocument";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/thaisa-site">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blog" element={<Blog />} />
