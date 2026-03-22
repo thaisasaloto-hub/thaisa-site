@@ -1,19 +1,25 @@
 import { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 
+// Local image imports
+import thaisaHeroImg from "@/assets/images/Thaisa hero.JPEG";
+import advsHistoriaImg from "@/assets/images/advs historia.JPEG";
+import dsc00145 from "@/assets/images/DSC00145.jpg";
+import dsc08850 from "@/assets/images/DSC08850.jpg";
+import dsc08866 from "@/assets/images/DSC08866.jpg";
+import logoFullSvg from "@/assets/images/logo-full.svg";
+
 const WHATSAPP_URL = "https://wa.me/5521920015586";
 
-// Real images from the client
 const ASSETS = {
-  logoNav: "https://019cd0f6-f51e-7b5e-a89c-b03d79843f0e.mochausercontent.com/logo-adv-transparente-4.png",
-  logoHero: "https://019cd0f6-f51e-7b5e-a89c-b03d79843f0e.mochausercontent.com/4.png",
-  logoAdvDark: "https://019cd0f6-f51e-7b5e-a89c-b03d79843f0e.mochausercontent.com/1.png",
-  thaisaHero: "https://019cd0f6-f51e-7b5e-a89c-b03d79843f0e.mochausercontent.com/Thaisa-hero.JPEG",
-  advsHistoria: "https://019cd0f6-f51e-7b5e-a89c-b03d79843f0e.mochausercontent.com/advs-historia.JPEG",
-  heroFamilia: "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1920&h=1080&fit=crop&auto=format",
-  cliente1: "https://019cd0f6-f51e-7b5e-a89c-b03d79843f0e.mochausercontent.com/WhatsApp-Image-2025-12-02-at-11.10.00-AM-(1).jpeg",
-  cliente2: "https://019cd0f6-f51e-7b5e-a89c-b03d79843f0e.mochausercontent.com/20250721_164146204_iOS.jpg",
-  trabalhando: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=1000&fit=crop&auto=format",
+  logoNav: logoFullSvg,
+  logoHero: logoFullSvg,
+  logoAdvDark: logoFullSvg,
+  thaisaHero: thaisaHeroImg,
+  advsHistoria: advsHistoriaImg,
+  thaisaCasual: dsc00145,
+  thaisaProfissional: dsc08850,
+  trabalhando: dsc08866,
 };
 
 // CSS Variables as constants
@@ -121,7 +127,7 @@ function Navbar() {
       >
         <div className="max-w-[1280px] mx-auto flex items-center justify-between gap-6">
           <a href="#hero" className="flex-shrink-0">
-            <img src={ASSETS.logoNav} alt="thaisaadv." className="h-[62px] w-auto" />
+            <img src={ASSETS.logoNav} alt="thaisaadv." className="h-[62px] w-auto" style={{ filter: "invert(1)" }} />
           </a>
 
           {/* Desktop nav links */}
@@ -253,10 +259,10 @@ function HeroSection() {
     <section id="hero" className="relative w-full h-screen min-h-[600px] overflow-hidden">
       {/* Background image */}
       <img
-        src={ASSETS.heroFamilia}
-        alt="Família feliz na praia"
+        src={ASSETS.thaisaProfissional}
+        alt="Thaisa Saloto de Oliveira"
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ objectPosition: "center 30%" }}
+        style={{ objectPosition: "center 25%" }}
       />
       
       {/* Gradient overlay */}
@@ -301,6 +307,7 @@ function HeroSection() {
             src={ASSETS.logoHero} 
             alt="thaisaadv." 
             className="w-[min(480px,55vw)] h-auto mb-2.5"
+            style={{ filter: "invert(1)" }}
           />
           <div className="w-9 h-px bg-white/25 mb-3" />
           <p className="text-[0.92rem] font-normal leading-[1.65] max-w-[460px] mb-10 text-center" style={{ color: "rgba(255,255,255,.82)" }}>
@@ -336,6 +343,7 @@ function HeroSection() {
             src={ASSETS.logoHero} 
             alt="thaisaadv." 
             className="w-[min(340px,80vw)] h-auto mb-6"
+            style={{ filter: "invert(1)" }}
           />
           <p className="text-[0.62rem] text-white/45 tracking-[0.25em] uppercase mb-8">
             Advocacia especializada em precatórios
@@ -713,8 +721,8 @@ function DepoimentosSection() {
           <div className="bg-white p-9">
             <div className="relative overflow-hidden w-full mb-5 group" style={{ aspectRatio: "4/3" }}>
               <img 
-                src={ASSETS.cliente1} 
-                alt="Clientes" 
+                src={ASSETS.thaisaCasual}
+                alt="Thaisa no escritório" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 style={{ objectPosition: "center top" }}
               />
@@ -748,8 +756,8 @@ function DepoimentosSection() {
           <div className="bg-white p-9">
             <div className="relative overflow-hidden w-full mb-5 group" style={{ aspectRatio: "4/3" }}>
               <img 
-                src={ASSETS.cliente2} 
-                alt="Clientes" 
+                src={ASSETS.thaisaProfissional}
+                alt="Thaisa profissional" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 style={{ objectPosition: "center 20%" }}
               />
@@ -1077,7 +1085,7 @@ function Footer() {
         >
           {/* Brand */}
           <div>
-            <img src={ASSETS.logoAdvDark} alt="thaisaadv." className="h-10 w-auto block mb-5" />
+            <img src={ASSETS.logoAdvDark} alt="thaisaadv." className="h-12 w-auto block mb-5" />
             <p className="text-[0.78rem] font-light leading-[1.85] max-w-[270px] mb-5" style={{ color: COLORS.cT }}>
               Advocacia especializada em precatórios. Transformando direitos esquecidos em liberdade financeira para famílias em todo o Brasil.
             </p>

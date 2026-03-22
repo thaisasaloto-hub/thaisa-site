@@ -17,7 +17,7 @@
 @layer base {
   :root {
     /* Thaisa Advocacia Brand Colors */
-    --background: 40 8% 93%; /* #eeede9 - creme claro */
+    --background: 0 0% 96%; /* #f5f5f4 - stone */
     --foreground: 20 8% 11%; /* #1b1b1b - quase preto */
     --card: 0 0% 100%;
     --card-foreground: 20 8% 11%;
@@ -25,12 +25,12 @@
     --popover-foreground: 20 8% 11%;
     --primary: 349 45% 29%; /* #6b2737 - vinho */
     --primary-foreground: 0 0% 100%;
-    --secondary: 40 8% 93%;
+    --secondary: 0 0% 96%;
     --secondary-foreground: 20 8% 11%;
     --muted: 40 6% 88%;
     --muted-foreground: 20 6% 35%;
-    --accent: 39 52% 52%; /* #c19749 - dourado */
-    --accent-foreground: 20 8% 11%;
+    --accent: 20 30% 3%; /* #0e0b09 - preto puro */
+    --accent-foreground: 0 0% 96%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 60 9.1% 97.8%;
     --border: 40 6% 82%;
@@ -38,11 +38,11 @@
     --ring: 349 45% 29%;
     --radius: 0.25rem;
     --chart-1: 349 45% 35%;
-    --chart-2: 39 52% 52%;
-    --chart-3: 349 65% 20%;
+    --chart-2: 20 30% 3%;
+    --chart-3: 349 45% 20%;
     --chart-4: 20 8% 25%;
-    --chart-5: 40 8% 70%;
-    --sidebar: 40 8% 93%;
+    --chart-5: 0 0% 70%;
+    --sidebar: 0 0% 96%;
     --sidebar-foreground: 20 8% 11%;
     --sidebar-primary: 349 45% 29%;
     --sidebar-primary-foreground: 0 0% 100%;
@@ -53,9 +53,7 @@
 
     /* Landing page specific */
     --wine: 349 45% 29%; /* #6b2737 */
-    --wine-dark: 349 65% 11%; /* #280e18 */
-    --gold: 39 52% 52%; /* #c19749 */
-    --cream: 40 8% 93%; /* #eeede9 */
+    --stone: 0 0% 96%; /* #f5f5f4 */
     --almost-black: 20 8% 11%; /* #1b1b1b */
     --pure-black: 20 30% 3%; /* #0e0b09 */
   }
@@ -73,7 +71,7 @@
     --secondary-foreground: 0 0% 98%;
     --muted: 12 6.5% 15.1%;
     --muted-foreground: 24 5.4% 63.9%;
-    --accent: 39 52% 52%;
+    --accent: 0 0% 96%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 72.2% 50.6%;
     --destructive-foreground: 0 0% 98%;
@@ -81,8 +79,8 @@
     --input: 0 0% 100% / 15%;
     --ring: 24 5.4% 63.9%;
     --chart-1: 349 45% 35%;
-    --chart-2: 39 52% 52%;
-    --chart-3: 349 65% 20%;
+    --chart-2: 20 30% 3%;
+    --chart-3: 349 45% 20%;
     --chart-4: 20 8% 25%;
     --chart-5: 40 8% 70%;
     --sidebar: 24 9.8% 10%;
